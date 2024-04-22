@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Estilos para el header */
+header {
+    background-color: #131212; 
+    padding: 0; /* Espaciado interno */
+    color: white; 
+    text-align: center; 
+    justify-content: center;
+    position: relative;
+}
+.hero video {
+    width: 100%; 
+    height: auto; 
+    opacity: 0.7; /* esto lo pone mas oscuro */
+}
+
+/* Estilos para la lista de navegación */
+nav {
+    position: fixed; 
+    top: 0; /* Coloca la barra de navegación en la parte superior */
+    width: 100%; 
+    background-color: rgba(7, 6, 6, 0.781); 
+}
+.nave{
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 20px; /* Quita el espacio interno */
+    margin: 10px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+nav ul li {
+    display: inline-block; 
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo al pasar el mouse */
+    border-radius: 5px; 
+}
+
+.absolute {
+    position: absolute;
+    top: 50%; /* Coloca el borde superior en el 50% del contenedor */
+    left: 50%; /* Coloca el borde izquierdo en el 50% del contenedor */
+    transform: translate(-50%, -50%); /* Aplica una transformación para centrar vertical y horizontalmente */
+    text-align: center; 
+    color: white; 
+}
+
+/* Estilos para el título */
+.absolute h1 {
+    font-size: 7.2rem;
+    text-shadow: 8px 8px 6px rgba(219, 4, 4, 0.918);
+    font-family: "roboto";        
+    margin-top: 0; /* Quita el margen superior */
+    margin-bottom: 10px; 
+}
+
+.absolute .parrafo {
+    font-size: 1.5rem;
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+/* Estilos para el botón de CTA */
+.absolute .cta-button {
+    background-color: #e63946; 
+    color: white; 
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; 
+    font-size: 1.3rem;
+    text-decoration: none; 
+}
+
+.absolute .cta-button:hover {
+    background-color:  #0056b3; 
+}
+
+.logo img{
+    float: left; 
+    margin: 10px 10px;
+    width: 60px; 
+    filter: invert(100%);   /* Esto me invirtio el color */
+}
+
+.features {
+    background: #131212;
+    color: white;
+    padding: 80px 20px;
+}
+
+.container {
+    display: flex;
+    background: #131212ec;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.column img {
+    max-width: 60%;
+}
+
+.column h2 {
+    color: #e63946; 
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+}
+
+.column p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.column a {
+    display: inline-block;
+    background-color:#e63946;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.column a:hover {
+    background-color: #0056b3;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.3rem;
+}
+
+.contact {
+    background-color:#131212;
+    padding: 80px 20px;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .column {
+    flex: 1;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contact form {
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+   
+}
+
+.contact form button {
+    display: block;
+    background-color: #e63946;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
+
+.contact .button {
+    display: inline-block;
+    background-color: #e63946;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact .button:hover {
+    background-color: #0056b3;
+}
+/* Estilos para mi footer */
+
+.footer {
+    background-color: #e63946;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;    
+    background: #e63946;
+}
+
+
+
+.footer .legal-tabs {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 30px;
+}
+
+.footer .legal-tabs li {
+    margin-bottom: 20px;
+    
+}
+
+.footer .legal-tabs li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer .social-buttons {
+    display: flex;
+}
+
+.footer .social-buttons a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer .social-buttons img {
+    width: 30px;
+}
+
+.footer p {
+    margin-top: 20px;
+    
+}
+.fa-brands{
+    width: 80px;
+    font-size: 30px;
+}
+
+
+
+/* Estilos para tablets */
+@media screen and (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .footer-column {
+        margin-bottom: 30px;
+    }
+
+    .footer .social-buttons {
+        justify-content: center;
+    }
+}
+
+/* Estilos para móviles */
+@media screen and (max-width: 480px) {
+    .footer img {
+        width: 80px;
+    }
+
+    .footer .legal-tabs li {
+        margin-bottom: 5px;
+    }
+
+    .footer .social-buttons img {
+        width: 25px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+

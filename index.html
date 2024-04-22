@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Fitness</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <!-- Aquí colocaremos el video del hero -->
+            <video src="/imagen/videogym.mp4" autoplay loop muted></video>
+        </div>
+        <nav class="nave">
+            <div class="logo">
+            
+                <img src="/imagen/gym.png" alt="Logo de Gimnasio Fitness">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#sistem">Sistema</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div  class="absolute" id="home">
+        <h1>ACTIVOGYMFIT</h1>
+        <p class="parrafo">Somos tu destino para ponerte en forma y alcanzar tus metas de salud y bienestar.</p>
+        <a href="nosotros.html" class="cta-button">Leer más</a></div>
+    </header>
+    <section class="features" id="sistem">
+        <div class="container">
+            <div class="column">
+                <img src="imagen/fotochica.jpeg" alt="sistema de entrenamiento">
+            </div>
+            <div class="column">
+                <h2>Sistema de Entrenamiento</h2>
+                <p>Te ofrecemos un sistema de entrenamiento personalizado y efectivo, diseñado para ayudarte a alcanzar tus objetivos de forma rápida y segura. Nuestros entrenadores expertos estarán contigo en cada paso del camino para garantizar tu éxito.</p>
+                <p>Además, nuestro sistema de entrenamiento se adapta a tus necesidades individuales, proporcionándote una experiencia de entrenamiento única y personalizada.</p>
+                <a href="#blog-section">Descubre más en nuestro Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="blog">
+        <div class="card">
+            <img src="imagen/ex1.jpg" alt="Imagen 1">
+            <div class="card-content">
+                <h3>Entrenamiento Funcional</h3>
+                <p>Mejora tu fuerza, resistencia y flexibilidad con nuestro entrenamiento funcional diseñado para todos los niveles.</p>
+            </div>
+        </div>
+        <!-- Repite esto para las demás imágenes -->
+        <div class="card">
+            <img src="imagen/ex2.jpg" alt="Imagen 2">
+            <div class="card-content">
+                <h3>Clases de Grupo</h3>
+                <p>Únete a nuestras divertidas clases de grupo y alcanza tus objetivos de forma rápida mientras te diviertes.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imagen/ex3.jpg" alt="Imagen 2">
+            <div class="card-content">
+                <h3>Clases de Grupo</h3>
+                <p>Únete a nuestras divertidas clases de grupo y alcanza tus objetivos de forma rápida mientras te diviertes.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imagen/ex4.jpg" alt="Imagen 2">
+            <div class="card-content">
+                <h3>Clases de Grupo</h3>
+                <p>Únete a nuestras divertidas clases de grupo y alcanza tus objetivos de forma rápida mientras te diviertes.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imagen/ex5.jpg" alt="Imagen 2">
+            <div class="card-content">
+                <h3>Clases de Grupo</h3>
+                <p>Únete a nuestras divertidas clases de grupo y alcanza tus objetivos de forma rápida mientras te diviertes.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imagen/ex6.jpg" alt="Imagen 2">
+            <div class="card-content">
+                <h3>Clases de Grupo</h3>
+                <p>Únete a nuestras divertidas clases de grupo y alcanza tus objetivos de forma rápida mientras te diviertes.</p>
+            </div>
+        </div>
+        <!-- card imágenes -->
+    </section>
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="column">
+                <h2>Regístrate</h2>
+                <form action="#" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="column">
+                <img src="imagen/chicofoto.jpeg" alt="chica">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes alguna pregunta? ¿Quieres más información sobre nuestros servicios? Estamos aquí para ayudarte.</p>
+                <a href="#" class="button">Inscríbete</a>
+                <a href="index.html" class="button">Ver más</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column">
+                <!-- <img src="imagen/gym.png" alt="Logo del gimnasio"> -->
+                <ul class="legal-tabs">
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <div class="social-buttons">
+                    <a href="https://twitter.com/LRaspitu"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/yuliriverosortiz/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/juliana.riveros.5/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/dojayuli"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <p>© 2024 Equipo 13 CODO a CODO. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
