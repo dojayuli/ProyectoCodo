@@ -1,119 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --color-first: rgb(19, 18, 18);
+    --color-second: rgba(54, 54, 54, 0.5);
+    --color-third: rgb(255, 255, 255);
+    --color-four:rgb(230, 57, 70);
+    
+    /* fonts */
+    --font-titular:  "Poppins", sans-serif;
+
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    min-height: 100%;
+    background-color: var(--color-first);
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+section { 
+    scroll-margin-top: 80px;       
+}
+
 /* Estilos para el header */
+
 header {
-    background-color: #131212; 
-    padding: 0; /* Espaciado interno */
-    color: white; 
-    text-align: center; 
-    justify-content: center;
-    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color:var(--color-first); 
+    z-index: 999;    
+    position: fixed;     
 }
-.hero video {
-    width: 100%; 
-    height: auto; 
-    opacity: 0.7; /* esto lo pone mas oscuro */
+header:hover {
+    background-color: var(--color-second);
+  }
+
+.flex {
+    display: flex;
+}
+.align-center{
+    align-items: center;
 }
 
-/* Estilos para la lista de navegación */
-nav {
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    background-color: rgba(7, 6, 6, 0.781); 
-}
-.nave{
-    text-align: right;
+header .nav-bar ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.1rem;
+    gap: 20px;
 }
 
-nav ul {
-    list-style-type: none; 
-    padding: 20px; 
-    margin: 10px; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.2rem;
+header .nav-bar{
+    margin-left: auto;
+    margin-right: 30px;
 }
 
-nav ul li {
-    display: inline-block; 
-    margin-right: 20px; 
+.nav-bar ul li a {
+    color: var(--color-third);
+    text-decoration: none;    
+    padding: 8px 10px;  
 }
 
-nav ul li a {
-    color: white; 
-    text-decoration: none;
-    padding: 10px 20px; /* Espaciado interno */
+.nav-bar ul li a:hover {
+    background-color: var(--color-four); /* Color de fondo al pasar el mouse */
+    border-radius: 20px; 
 }
 
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo al pasar el mouse */
-    border-radius: 5px; 
+.logo img{
+    width: 50px; 
+    margin: 15px;
+    margin-left: 30px; 
+    filter: invert(100%);   /* Esto me invirtio el color */
+}
+ /* estilos del hero */
+
+ .hero {   
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Proporción 16:9, ajusta este valor según la relación de aspecto de tu video */
+  overflow: hidden;
 }
 
-.absolute {
+.hero video{
     position: absolute;
-    top: 50%; /* Coloca el borde superior en el 50% del contenedor */
-    left: 50%; /* Coloca el borde izquierdo en el 50% del contenedor */
-    transform: translate(-50%, -50%); /* Aplica una transformación para centrar vertical y horizontalmente */
-    text-align: center; 
-    color: white; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
 }
 
-/* Estilos para el título */
-.absolute h1 {
-    font-size: 7.2rem;
-    text-shadow: 8px 8px 6px rgba(219, 4, 4, 0.918);
-    font-family: "roboto";        
-    margin-top: 0; /* Quita el margen superior */
-    margin-bottom: 10px; 
-}
 
-.absolute .parrafo {
-    font-size: 1.5rem;
-    margin-bottom: 30px; /* Espacio inferior */
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Aplica una transformación para centrar vertical y horizontalmente */ 
+    transform: translate(-50%, -50%);
+    color: var(--color-third); 
+    text-align: center;
+ 
+}
+.title h1{
+    font-family:var(--font-titular);
+    font-weight: bold;
+    font-size: 5.5rem; 
+    text-shadow: 5px 5px 5px rgba(219, 4, 4, 0.918); 
+}
+p{
+    font-size: 1.1rem;
+    margin-bottom: 25px;
 }
 
 /* Estilos para el botón de CTA */
-.absolute .cta-button {
-    background-color: #e63946; 
-    color: white; 
+.cta-button{
+    background-color:var(--color-four); 
+    color:var(--color-third); 
     padding: 10px 20px; /* Espaciado interno */
     border-radius: 5px; 
     font-size: 1.3rem;
     text-decoration: none; 
 }
 
-.absolute .cta-button:hover {
-    background-color:  #0056b3; 
+.cta-button:hover {
+    background-color:  rgb(0, 86, 179); 
+    transition: all .5s ease;
 }
 
-.logo img{
-    float: left; 
-    margin: 10px 10px;
-    width: 60px; 
-    filter: invert(100%);   /* Esto me invirtio el color */
-}
+/* section features*/
 
 .features {
-    background: #131212;
     color: white;
     padding: 80px 20px;
-}
-
-.container {
-    display: flex;
-    background: #131212ec;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-
-.column {
-    flex: 1;
-    padding: 0 20px;
 }
 
 .column img {
