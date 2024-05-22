@@ -521,6 +521,13 @@ header .nav-links{
     .box a.boxBtn{
         padding: 10px 25px;
     }
+/* estilo nosotros */
+    .join {
+        flex-direction: column;
+       justify-content: center; 
+       align-items: center;
+       
+     }
 }
 
 
@@ -578,6 +585,15 @@ header .nav-links{
         display: none;
         transition: all .7s ease;
     }
+
+    .nav-links-mobile.active {
+        display: flex;
+        visibility: visible;
+        justify-content: center;
+        padding: 40px;
+    }
+
+
 
     .nav-links-mobile.menu-visible {
         visibility:visible;
