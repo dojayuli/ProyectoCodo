@@ -402,7 +402,7 @@ header .nav-links{
 
   .text-contact {
     color: var(--color-third);
-    padding: 80px 40px;
+    padding: 70px 40px;
     align-items: center;
 }
 
@@ -628,6 +628,11 @@ header .nav-links{
     .text-contact a {
         display: flex;
         justify-content: center;
+        margin-left: 60px;
+        width: 130px;
+      }
+      .text-contact{
+        margin-bottom:  0;
       }
 
 /* Contacto */
@@ -650,6 +655,7 @@ header .nav-links{
         margin: 8px;
         padding: 15px;
      }
+   
    
   }
   
